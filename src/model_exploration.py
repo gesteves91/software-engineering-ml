@@ -21,7 +21,7 @@ from sklearn.linear_model import Lasso
 #duvida SLC15, ASRI42, ASRI_pass42 (pensava em morrer ou em suicidio)
 
 # Parameters
-LABEL_COLUMN_NAME = 'satisfaction'
+LABEL_COLUMN_NAME = 'mean_commits'
 UNWANTED_COLUMNS = []
 
 N_FOLDS = 5
@@ -89,6 +89,10 @@ def back_one(df, f, md):
 
 # Reads dataset
 df = pd.read_csv(sys.argv[1])
+df.drop('date', axis=1, inplace=True)
+df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
+df = df.dropna()
+df = df.apply(pd.to_numeric)
 df.dropna(axis=0, subset=[LABEL_COLUMN_NAME], inplace=True)
 
 RANDOM_STATE = 1
