@@ -31,7 +31,9 @@ UNWANTED_COLUMNS = ['comment_count', 'total_deletions', 'total_additions', 'tota
                     'language_Shell', 'language_TypeScript',
                     'most_changes_added',
                     'most_changes_modified', 'most_changes_removed', 'most_changes_renamed',
-                    'most_changes_unknown',
+                    'most_changes_unknown', 'is_night',
+                    'is_weekend',
+                    'type_User'
                     ]
 
 WANTED_COLUMNS = ['phases_project', 'language_C', 'language_Python', 'language_R', 'language_Ruby', 'language_Java',
@@ -39,18 +41,16 @@ WANTED_COLUMNS = ['phases_project', 'language_C', 'language_Python', 'language_R
                   'language_PHP', 'type_Organization', 'has_issues',  'language_Scala', 'size',
                   'total_files',
                   'language_JavaScript',
-                  'is_night',
-                  'is_weekend',
-                  'type_User'
+
                   ]
 
 N_FOLDS = 2
 RANDOM_STATE = 1
 
 n_estimators = 40
-subsample = 0.6
+subsample = 0.5
 lr = 0.1
-max_depth = 10
+max_depth = 6
 
 total = 0
 best_models = 0
@@ -135,7 +135,7 @@ f = []
 i = 0
 # for f1 in all_features:
 for f1 in WANTED_COLUMNS:
-    if i == 20:
+    if i == 17:
         break
     if f1 in f:
         continue
