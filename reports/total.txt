@@ -1,5 +1,5 @@
-Total number of models: 2045
-Best achieved model: 0.935979
-Features related to the smallest set of features: ['size']
-Number of best models: 561 
-Percentage of best models: 27.432763
+Total number of models: 3351
+Best achieved model: 0.857154
+Features related to the smallest set of features: ['phases_project', 'language_Ruby', 'has_wiki', 'size']
+Number of best models: 89 
+Percentage of best models: 2.655924
