@@ -172,7 +172,7 @@ for c in range(1, 5):
 
 percentage = (best_models / total) * 100
 
-with open('../reports/total.txt', 'w') as f:
+with open('../reports/java.txt', 'w') as f:
     print("Total number of models: %i\nBest achieved model: %f\nFeatures related to the smallest set of features: %s\nNumber of best models: %i \nPercentage of best models: %f" % (
         total, best_generated_model, feat, best_models, percentage), file=f)
 
