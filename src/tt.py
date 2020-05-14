@@ -35,7 +35,7 @@ UNWANTED_COLUMNS = ['comment_count', 'total_deletions', 'total_additions', 'tota
                     'most_changes_modified', 'most_changes_removed', 'most_changes_renamed',
                     'most_changes_unknown', 'is_night',
                     'is_weekend',
-                    'type_User'
+                    'type_User','date'
                     ]
 
 def eval_cv(df1, df2, df3, features):
@@ -83,7 +83,12 @@ def back_one(df1, df2, df3, f):
     return v,f2
 
 
-df1 = pd.read_csv(sys.argv[1])
+#df1 = pd.read_csv(sys.argv[1])
+df1 = pd.read_csv('../experiments/scala.csv')
+
+def separate_data(df):
+    train, validate, test = np.split(df.sample(frac=1), [int(.6*len(df)), int(.8*len(df))])
+    return validate, test
 
 df2, df3 = separate_data(df1)
 
@@ -128,7 +133,3 @@ for f1 in all_features:
              x = f2
              k = z
     f.insert(len(f), x)
-
-def separate_data(df):
-    train, validate, test = np.split(df.sample(frac=1), [int(.6*len(df)), int(.8*len(df))])
-    return validate, test
