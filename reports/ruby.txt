@@ -1,0 +1,5 @@
+Total number of models: 3345
+Best achieved model: 0.828665
+Features related to the smallest set of features: ['phases_project', 'size', 'total_files']
+Number of best models: 152 
+Percentage of best models: 4.544096
