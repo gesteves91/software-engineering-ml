@@ -83,7 +83,6 @@ def back_one(df1, df2, df3, f):
         f1.insert(len(f1), i)
     return v,f2
 
-
 df1 = pd.read_csv(sys.argv[1])
 
 def separate_data(df):
