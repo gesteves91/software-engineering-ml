@@ -9,6 +9,8 @@ import lightgbm as lgb
 
 from sklearn.metrics import mean_absolute_error
 
+sys.stdout = open('output-2.txt','wt')
+
 params = {
     "max_bin": 64,
     "max_depth": 20,
@@ -54,9 +56,8 @@ def eval_cv(df1, df2, df3, features):
     y_last = gbm.predict(X_test)
 
     for i in range(len(y_val)):
-         #if y_pred[i] < 0: y_pred[i] = 0
-         print("result: ",i,y_val[i],y_pred[i])
-    print("result: ",i+1,y_test[0],y_last[0])
+         print("eval: ",i,y_val[i],y_pred[i])
+    print("final evaluation: ",i+1,y_test[0],y_last[0])
 
     return mean_absolute_error(y_val, y_pred)
 
@@ -83,8 +84,7 @@ def back_one(df1, df2, df3, f):
     return v,f2
 
 
-#df1 = pd.read_csv(sys.argv[1])
-df1 = pd.read_csv('../experiments/scala.csv')
+df1 = pd.read_csv(sys.argv[1])
 
 def separate_data(df):
     train, validate, test = np.split(df.sample(frac=1), [int(.6*len(df)), int(.8*len(df))])
@@ -92,8 +92,6 @@ def separate_data(df):
 
 df2, df3 = separate_data(df1)
 
-#df2 = pd.read_csv(sys.argv[2])
-#df3 = pd.read_csv(sys.argv[3])
 df1.dropna(axis=0, subset=[LABEL_COLUMN_NAME], inplace=True)
 df2.dropna(axis=0, subset=[LABEL_COLUMN_NAME], inplace=True)
 df3.dropna(axis=0, subset=[LABEL_COLUMN_NAME], inplace=True)
@@ -102,14 +100,7 @@ all_features = list(df1.columns)
 for f in UNWANTED_COLUMNS + [LABEL_COLUMN_NAME]:
     all_features.remove(f)
 
-#f = ['Average Temperature (C)', '40-year olds (males per 100 females)', 'Income Distribution (GINI Index)', '65+ years (share of population)', 'Restrictions on internal movement (No measures)', 'Out-of-pocket expenditure (% health expenditure)', 'Diabetes mellitus (deaths 70+ years per 100k)', 'Nutritional deficiencies (deaths per 100k)', '70+ years old (share of deaths)', '25 to 64 years (share of population)', 'Vitamin-A deficiency (deaths per 100k)', '15 to 24 years (share of population)', 'Public information campaigns (No campaign)']
-f = ['phases_project', 'language_C', 'language_Python', 'language_R', 'language_Ruby', 'language_Java',
-                  'has_wiki', 'has_downloads', 'outside_contribution', 'tests_included',
-                  'language_PHP', 'type_Organization', 'has_issues',  'language_Scala', 'size',
-                  'total_files',
-                  'language_JavaScript',
-
-                  ]
+f = []
 xx = []
 i = 0
 
