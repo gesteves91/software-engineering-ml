@@ -27,7 +27,6 @@ UNWANTED_COLUMNS = ['comment_count', 'total_deletions', 'total_additions', 'tota
                     'forks', 'open_issues', 'watchers', 'network_count', 'admin', 'push',
                     'pull',  'language_C#', 'language_C++', 'language_CSS', 'language_CoffeeScript',
                     'language_Go', 'language_Perl',
-
                     'language_Shell', 'language_TypeScript',
                     'most_changes_added',
                     'most_changes_modified', 'most_changes_removed', 'most_changes_renamed',
