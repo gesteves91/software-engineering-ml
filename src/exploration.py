@@ -40,8 +40,7 @@ WANTED_COLUMNS = ['phases_project', 'language_C', 'language_Python', 'language_R
                   'language_PHP', 'type_Organization', 'has_issues',  'language_Scala', 'size',
                   'total_files',
                   'language_JavaScript',
-
-                  ]
+                 ]
 
 N_FOLDS = 2
 RANDOM_STATE = 1
@@ -59,7 +58,6 @@ feat = []
 for c in range(1, 50):
     feat.append('feature')
 
-
 def random_combinations(iterable, r, x):
     pool = tuple(iterable)
     n = len(pool)
@@ -68,7 +66,6 @@ def random_combinations(iterable, r, x):
         indices = sorted(random.sample(range(n), r))
         a.insert(len(a), tuple(pool[i] for i in indices))
     return list(set(a))
-
 
 def eval_features(df, features):
     global total
@@ -92,7 +89,6 @@ def eval_features(df, features):
         r2 = r2_score(pred, y[val])
 
     return r2
-
 
 def eval_panel(df, comb):
     for ff in comb:
@@ -143,7 +139,6 @@ for f1 in WANTED_COLUMNS:
     i = i + 1
     j = 0
     avg = 0
-#    for f2 in all_features:
     for f2 in WANTED_COLUMNS:
         if f2 in f:
             continue
