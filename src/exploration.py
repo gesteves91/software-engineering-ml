@@ -35,12 +35,11 @@ UNWANTED_COLUMNS = ['comment_count', 'total_deletions', 'total_additions', 'tota
                     'type_User'
                     ]
 
-WANTED_COLUMNS = ['phases_project', 'language_C', 'language_Python', 'language_R', 'language_Ruby', 'language_Java',
-                  'has_wiki', 'has_downloads', 'outside_contribution', 'tests_included',
-                  'language_PHP', 'type_Organization', 'has_issues',  'language_Scala', 'size',
-                  'total_files',
+WANTED_COLUMNS = ['phases_project', 'language_C', 'language_Python', 'language_R', 'language_Ruby', 
+                  'language_Java', 'has_wiki', 'has_downloads', 'outside_contribution', 'tests_included',
+                  'language_PHP', 'type_Organization', 'has_issues',  'language_Scala', 'size', 'total_files',
                   'language_JavaScript',
-                 ]
+                  ]
 
 N_FOLDS = 2
 RANDOM_STATE = 1
@@ -54,6 +53,7 @@ total = 0
 best_models = 0
 best_generated_model = 0
 feat = []
+feat_best_gen_model = []
 
 for c in range(1, 50):
     feat.append('feature')
@@ -105,18 +105,21 @@ def eval_panel(df, comb):
 
 
 def check_best_models(acc, features):
-    global best_models, best_generated_model, feat
+    global best_models, best_generated_model, feat, feat_best_gen_model
 
     model_accuracy = acc
 
     # check the number of models above the baseline model
-    if (model_accuracy > 0.7):
+    if (model_accuracy > 0.73):
         best_models = best_models + 1
         if (len(features) < len(feat)):
             feat = features
+
     # check the highestes model achieved
     if (model_accuracy > best_generated_model):
         best_generated_model = model_accuracy
+        #if (len(features) < len(feat_best_gen_model)):
+        feat_best_gen_model = features
 
 
 # Reads dataset
@@ -166,8 +169,8 @@ for c in range(1, 5):
 
 percentage = (best_models / total) * 100
 
-with open('../reports/php.txt', 'w') as f:
-    print("Total number of models: %i\nBest achieved model: %f\nFeatures related to the smallest set of features: %s\nNumber of best models: %i \nPercentage of best models: %f" % (total, best_generated_model, feat, best_models, percentage), file=f)
+with open('../reports/scala.txt', 'w') as f:
+    print("Total number of models: %i\nBest achieved model: %f\n Features of the best achieved model: %s\nFeatures related to the smallest set of features: %s\nNumber of best models: %i \nPercentage of best models: %f" % (total, best_generated_model, feat_best_gen_model, feat, best_models, percentage), file=f)
 
 # file_features.close()
 # file_auc.close()
