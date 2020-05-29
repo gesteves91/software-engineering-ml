@@ -1,5 +1,6 @@
 Total number of models: 3345
 Best achieved model: 0.863553
+ Features of the best achieved model: ['size', 'phases_project', 'has_wiki', 'tests_included', 'total_files', 'type_Organization', 'has_issues', 'language_C', 'language_Python', 'language_R', 'outside_contribution']
 Features related to the smallest set of features: ['phases_project', 'size']
 Number of best models: 221 
 Percentage of best models: 6.606876

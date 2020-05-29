@@ -1,5 +1,0 @@
-Total number of models: 3345
-Best achieved model: 0.885254
-Features related to the smallest set of features: ['size']
-Number of best models: 819 
-Percentage of best models: 24.484305
