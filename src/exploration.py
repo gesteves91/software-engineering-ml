@@ -110,7 +110,7 @@ def check_best_models(acc, features):
     model_accuracy = acc
 
     # check the number of models above the baseline model
-    if (model_accuracy > 0.85):
+    if (model_accuracy > 0.875):
         best_models = best_models + 1
         if (len(features) < len(feat)):
             feat = features
