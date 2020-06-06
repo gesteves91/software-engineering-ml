@@ -1,0 +1,198 @@
+601072    18.281019
+Name: mean_commits, dtype: float64
+601071    26.988187
+Name: mean_commits, dtype: float64
+601063    42.643484
+Name: mean_commits, dtype: float64
+601039    39.605257
+Name: mean_commits, dtype: float64
+600842    21.736948
+Name: mean_commits, dtype: float64
+601017    44.790359
+Name: mean_commits, dtype: float64
+601052    41.141819
+Name: mean_commits, dtype: float64
+600965    43.036778
+Name: mean_commits, dtype: float64
+601074    65.204864
+Name: mean_commits, dtype: float64
+601070    32.653806
+Name: mean_commits, dtype: float64
+601001    22.0608
+Name: mean_commits, dtype: float64
+601047    44.743433
+Name: mean_commits, dtype: float64
+601075    33.831184
+Name: mean_commits, dtype: float64
+600630    23.738504
+Name: mean_commits, dtype: float64
+600730    36.264991
+Name: mean_commits, dtype: float64
+601064    43.011384
+Name: mean_commits, dtype: float64
+600670    28.158241
+Name: mean_commits, dtype: float64
+601030    29.825899
+Name: mean_commits, dtype: float64
+598444    28.694202
+Name: mean_commits, dtype: float64
+600784    30.669462
+Name: mean_commits, dtype: float64
+547721    38.375621
+Name: mean_commits, dtype: float64
+601051    18.56546
+Name: mean_commits, dtype: float64
+600970    20.917868
+Name: mean_commits, dtype: float64
+600883    32.781457
+Name: mean_commits, dtype: float64
+600699    50.209145
+Name: mean_commits, dtype: float64
+600907    35.201401
+Name: mean_commits, dtype: float64
+600945    34.295246
+Name: mean_commits, dtype: float64
+600941    26.39285
+Name: mean_commits, dtype: float64
+599610    30.447193
+Name: mean_commits, dtype: float64
+601076    33.636005
+Name: mean_commits, dtype: float64
+600901    24.338206
+Name: mean_commits, dtype: float64
+600879    19.731229
+Name: mean_commits, dtype: float64
+600633    36.403034
+Name: mean_commits, dtype: float64
+600870    20.209974
+Name: mean_commits, dtype: float64
+601073    26.81359
+Name: mean_commits, dtype: float64
+600980    24.137075
+Name: mean_commits, dtype: float64
+600689    27.859162
+Name: mean_commits, dtype: float64
+600928    24.180435
+Name: mean_commits, dtype: float64
+601048    24.051677
+Name: mean_commits, dtype: float64
+600998    22.287308
+Name: mean_commits, dtype: float64
+601007    18.790989
+Name: mean_commits, dtype: float64
+600974    22.269161
+Name: mean_commits, dtype: float64
+600065    37.007389
+Name: mean_commits, dtype: float64
+598924    32.678686
+Name: mean_commits, dtype: float64
+600711    11.472149
+Name: mean_commits, dtype: float64
+601068    23.307247
+Name: mean_commits, dtype: float64
+599389    30.578801
+Name: mean_commits, dtype: float64
+600417    20.251836
+Name: mean_commits, dtype: float64
+599851    17.161244
+Name: mean_commits, dtype: float64
+589420    22.439926
+Name: mean_commits, dtype: float64
+598049    7.310504
+Name: mean_commits, dtype: float64
+598948    25.898079
+Name: mean_commits, dtype: float64
+600688    30.050719
+Name: mean_commits, dtype: float64
+601008    25.371829
+Name: mean_commits, dtype: float64
+600119    18.620038
+Name: mean_commits, dtype: float64
+599531    15.244487
+Name: mean_commits, dtype: float64
+601035    24.250395
+Name: mean_commits, dtype: float64
+599566    24.81203
+Name: mean_commits, dtype: float64
+598944    18.727273
+Name: mean_commits, dtype: float64
+600462    20.637899
+Name: mean_commits, dtype: float64
+598972    29.237555
+Name: mean_commits, dtype: float64
+545844    11.283186
+Name: mean_commits, dtype: float64
+591612    20.435511
+Name: mean_commits, dtype: float64
+599900    37.447168
+Name: mean_commits, dtype: float64
+599414    19.248826
+Name: mean_commits, dtype: float64
+592887    34.828244
+Name: mean_commits, dtype: float64
+600440    28.502879
+Name: mean_commits, dtype: float64
+584094    35.029354
+Name: mean_commits, dtype: float64
+529471    14.074803
+Name: mean_commits, dtype: float64
+600369    20.542231
+Name: mean_commits, dtype: float64
+600045    28.874735
+Name: mean_commits, dtype: float64
+600339    14.699571
+Name: mean_commits, dtype: float64
+444914    15.131579
+Name: mean_commits, dtype: float64
+600006    23.025435
+Name: mean_commits, dtype: float64
+600491    33.70607
+Name: mean_commits, dtype: float64
+599646    30.14827
+Name: mean_commits, dtype: float64
+516879    14.954955
+Name: mean_commits, dtype: float64
+600894    21.062271
+Name: mean_commits, dtype: float64
+599619    17.068646
+Name: mean_commits, dtype: float64
+593874    28.458498
+Name: mean_commits, dtype: float64
+594329    24.364407
+Name: mean_commits, dtype: float64
+600761    33.260394
+Name: mean_commits, dtype: float64
+588424    29.385965
+Name: mean_commits, dtype: float64
+597299    20.309051
+Name: mean_commits, dtype: float64
+598742    27.139364
+Name: mean_commits, dtype: float64
+598552    35.064935
+Name: mean_commits, dtype: float64
+451484    30.344828
+Name: mean_commits, dtype: float64
+564390    36.015326
+Name: mean_commits, dtype: float64
+279580    69.444444
+Name: mean_commits, dtype: float64
+592480    25.498008
+Name: mean_commits, dtype: float64
+600734    23.72093
+Name: mean_commits, dtype: float64
+537083    24.456522
+Name: mean_commits, dtype: float64
+557637    12.048193
+Name: mean_commits, dtype: float64
+369956    25.694444
+Name: mean_commits, dtype: float64
+331727    31.2
+Name: mean_commits, dtype: float64
+369878    2.564103
+Name: mean_commits, dtype: float64
+277362    6.25
+Name: mean_commits, dtype: float64
+593127    13.084112
+Name: mean_commits, dtype: float64
+313653    13.72549
+Name: mean_commits, dtype: float64
