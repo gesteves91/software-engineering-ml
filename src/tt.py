@@ -24,7 +24,7 @@ params = {
     "boost_from_average": False,
     'bagging_freq': 1,
     "random_state": 1
-}
+    }
 
 LABEL_COLUMN_NAME = 'mean_commits'
 UNWANTED_COLUMNS = ['comment_count', 'total_deletions', 'total_additions', 'total',
